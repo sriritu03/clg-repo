@@ -1,19 +1,19 @@
-def register_user():
-    print("Welcome to the Registration System!")
-
-    # Collect user information
-    username = input("Enter your username: ")
-    email = input("Enter your email: ")
-    password = input("Enter your password: ")
-
-    # Basic validation
+def register_user(username, email, password):
+    # Simulated registration process
     if username and email and password:
-        print("\nRegistration successful!")
+        print("Registration successful!")
         print("User Information:")
         print(f"Username: {username}")
         print(f"Email: {email}")
     else:
-        print("Please fill in all fields.")
+        print("Please provide all required fields.")
 
 if __name__ == "__main__":
-    register_user()
+    # Hard-coded user data
+    username = "john_doe"
+    email = "john@example.com"
+    password = "securepassword"
+
+    # Register the user
+    register_user(username, email, password)
+
